@@ -1,0 +1,271 @@
+@media (max-width:1500px){
+    .chart-container{
+        position: relative;
+        height: 323px;
+        width: 500px;
+    }
+}
+
+@media (max-width:1080px){
+    .chart-container{
+        position: relative;
+        height: 300px;
+        width: 420px;
+    }
+}
+
+
+@media (max-width:950px){
+    body{
+        background-color: #56657F;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-rows: 80px 80px repeat(4, 400px)  100px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 8px;
+       /* height: 150vh;*/
+       width: 100vw;
+    }
+    .aaron{
+        grid-row: 1/ 9;
+        grid-column: 1 / span 1;
+    }
+    .four-box1{
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+    .four-box2{
+        grid-row: 1 / span 1;
+        grid-column: 3/-1;
+    }
+    .four-box3{
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    .four-box4{
+        grid-row: 2 / span 1;
+        grid-column: 3/-1;
+    }
+    .sales{
+        grid-row: 3 / 4;
+        grid-column: 2/-1;
+    }
+    .may{
+        grid-row: 4 / 6;
+        grid-column: 2/-1;
+    }
+    .activity{
+        grid-row: 6 / 7;
+        grid-column: 2/-1;
+    }
+    .new{
+        grid-row: 7 / 9;
+        grid-column: 2/-1;
+    }
+    .top-state{
+        grid-row: 9 / 11;
+        grid-column: 1/-1;
+    }
+    .f-div{
+        padding-top: 3px;
+    }
+    .my-h2{
+        box-sizing: border-box;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .my-p{
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    .only-com-four{
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width:770px){
+    body{
+        background-color: #56657F;
+    }
+    .web-text{
+        color: #56657F;
+        font-size: 10px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-rows: 80px 80px 400px 80px 390px 470px 200px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 6px;
+       /* height: 150vh;*/
+       width: 100vw;
+    }
+    .aaron{
+        grid-row: 1/ 9;
+        grid-column: 1 / span 1;
+    }
+    .four-box1{
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+    .four-box2{
+        grid-row: 1 / span 1;
+        grid-column: 3/-1;
+    }
+    .four-box3{
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    .four-box4{
+        grid-row: 2 / span 1;
+        grid-column: 3/-1;
+    }
+    .sales{
+        grid-row: 3 / 4;
+        grid-column: 2/-1;
+    }
+    .may{
+        grid-row: 4 / 6;
+        grid-column: 2/-1;
+    }
+    .activity{
+        grid-row: 6 / 7;
+        grid-column: 2/-1;
+    }
+    .new{
+        grid-row: 7 / 9;
+        grid-column: 2/-1;
+    }
+    .top-state{
+        grid-row: 9 / 11;
+        grid-column: 1/-1;
+    }
+    .f-div{
+        padding-top: 3px;
+    }
+    .my-h2{
+        box-sizing: border-box;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .my-p{
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    .my-canvas2{
+        position: relative;
+        height: 300px;
+        width: 355px;
+    }
+}
+
+@media (max-width:680px){
+    .chart-container{
+        position: relative;
+        height: 300px;
+        width: 350px;
+    }
+    
+}
+
+
+@media (max-width:570px){
+    body{
+        background-color: #56657F;
+    }
+    .web-text{
+        color: #56657F;
+        font-size: 9px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-rows: 80px 80px 240px 80px 260px 250px 200px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3px;
+       /* height: 150vh;*/
+       width: 100vw;
+    }
+    .aaron{
+        grid-row: 1/ 10;
+        grid-column: 1 / span 1;
+    }
+    .four-box1{
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+    .four-box2{
+        grid-row: 1 / span 1;
+        grid-column: 3/-1;
+    }
+    .four-box3{
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    .four-box4{
+        grid-row: 2 / span 1;
+        grid-column: 3/-1;
+    }
+    .sales{
+        grid-row: 3 / 4;
+        grid-column: 2/-1;
+    }
+    .may{
+        grid-row: 4 / 6;
+        grid-column: 2/-1;
+    }
+    .activity{
+        grid-row: 6 / 7;
+        grid-column: 2/-1;
+    }
+    .new{
+        grid-row: 7 / 10;
+        grid-column: 2/-1;
+    }
+    .top-state{
+        grid-row: 10 / 12;
+        grid-column: 1/-1;
+    }
+    .f-div{
+        padding-top: 3px;
+    }
+    .my-h2{
+        box-sizing: border-box;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .my-p{
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+   .chart-container{
+       position: relative;
+       height: 180px;
+       width: 225px;
+   }
+   .my-canvas2{
+    position: relative;
+    height: 180px;
+    width: 225px;
+    }  
+}
+
+
+@media (max-width:325px){
+    .chart-container{
+        position: relative;
+        height: 180px;
+        width: 185px;
+    }
+    .my-canvas2{
+        position: relative;
+        height: 180px;
+        width: 190px;
+    }
+}

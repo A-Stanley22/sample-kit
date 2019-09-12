@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></head>
+    <script src="https://kit.fontawesome.com/5bcb8d08fd.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./indexMedia.css">
+    <title>css grid</title>
+</head>
+<body class="web-text">
+        <div class="grid-container">
+            <div class="aaron bg-c gen-pad">
+                <div class="img-div">
+                    <img class="profile-img" src="./images/pic.jpg" alt="">
+                </div>
+                <div class="aaron-and-font"><h2 class="aaron-items head-txt">Aaron Young</h2><span class="push aaron-and-font-align"><i class="fa fa-check" aria-hidden="true"></i></div>
+                <hr>
+                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Dashboard</div>
+                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Messages</div>
+                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>My Task</div>
+                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Clients</div>
+                <hr class="my-hr g">
+                <div class="my-set">Setting</div>
+                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Main Settings</div>
+                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Integrations</div>
+            </div>
+            
+
+            <div class="four-box1 four bg-c only-com-four">
+                <div>
+                    <div class="f-div"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div class="my-h2">128</div>
+                    <div class="my-p">Clients</div>
+                </div>
+            </div>
+
+            <div class="four-box2 four bg-c only-com-four">
+                <div>
+                    <div class="f-div"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div class="my-h2">32</div>
+                    <div class="my-p">Completed tasks</div>
+                </div>
+            </div>
+
+            <div class="four-box3 four bg-c only-com-four">
+                <div>
+                    <div class="f-div"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div class="my-h2">2</div>
+                    <div class="my-p">Notifications</div>
+                </div>
+            </div>
+
+            <div class="four-box4 four bg-c only-com-four">
+                <div>
+                    <div class="f-div"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div class="my-h2">4</div>
+                    <div class="my-p">Reports</div>
+                </div>
+            </div>
+
+            <div class="may bg-c">
+                <img class="use-as-bg" src="./images/pic.jpg" alt="">
+            </div>
+
+            <div class="activity bg-c">
+                <h4 class="act-head head-txt">Activity</h4>
+                <div class="my-canvas2">
+                    <canvas id="myChart2" class="my-canvas"></canvas>
+                </div>
+            </div>
+
+            <div class="sales bg-c gen-pad">
+                <h2 class="head-txt">Sales</h2>
+                <div class="chart-container">
+                    <canvas id="line-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="new bg-c gen-pad">
+                <h2 class="head-txt">New Clients</h2>
+                <div class="img-div">
+                   <img class="profile-img" src="./images/pic.jpg" alt="">
+                   <div class="two-p">
+                        <div>NIcci Troiani</div>
+                        <div>Chicago, IL</div>
+                    </div>
+                    <div class="push">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="img-div">
+                   <img class="profile-img" src="./images/pic.jpg" alt="">
+                   <div class="two-p">
+                        <div>George Fields</div>
+                        <div>New York, NY</div>
+                    </div>
+                    <div class="push">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="img-div">
+                   <img class="profile-img" src="./images/pic.jpg" alt="">
+                   <div class="two-p">
+                        <div>Jones Dermot</div>
+                        <div>San Francisco, SA</div>
+                    </div>
+                    <div class="push">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="img-div">
+                   <img class="profile-img" src="./images/pic.jpg" alt="">
+                   <div class="two-p">
+                        <div>Jane Doe</div>
+                        <div>New York, Ny</div>
+                    </div>
+                    <div class="push">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-state bg-c gen-pad">
+                <h2 class="head-txt">Top States</h2>
+                <canvas id="myChart3"></canvas>
+            </div>
+
+            
+        </div>
+        <script>
+
+var ctx = document.getElementById('myChart3');
+var myChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 7, 3],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.9)',
+                'rgba(54, 162, 235, 0.9)',
+                'rgba(54, 162, 235, 0.9)',
+                'rgba(54, 162, 235, 0.9)',
+                'rgba(54, 162, 235, 0.9)',
+                'rgba(54, 162, 235, 0.9)'
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: [1,1,1,1,1,1,1,1,1,2],
+    datasets: [{ 
+        data: [86,114,2000,2111,1500,1789,400,221,783,2478],
+        label: "Africa",
+        borderColor: "#3e95cd",
+        fill: false
+      },  
+    ]
+  },
+  options: {
+    maintainAspectRatio: false,
+    title: {
+      display: true,
+      text: 'World population per region (in millions)'
+    }
+  }
+});
+
+
+var ctx = document.getElementById('myChart2');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+            'rgba(54, 162, 235, 0.9)',
+                'rgba(54, 162, 235, 0.9)',
+                'rgba(54, 162, 235, 0.9)',
+                'rgba(54, 162, 235, 0.9)',
+                'rgba(54, 162, 235, 0.9)',
+                'rgba(54, 162, 235, 0.9)'
+            ],
+            borderColor: [
+            'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+        </script>
+</body>
+</html>
