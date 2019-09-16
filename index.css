@@ -1,22 +1,21 @@
 /*general specification*/
+.web-text{
+    color: #56657F;
+}
 .head-txt{
     color: #9DAABE;
 }
 .bg-c{
     background-color: #212936;
 }
-.web-text{
-    color: #56657F;
-}
-
 body{
-    background-color: #56657F;
+    background-color: #2B3648;
 }
 
 .grid-container{
     display: grid;
     grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: max-content repeat(7, 1fr); /*repeat(8, 1fr)*/
     grid-gap: 15px;
 }
 .aaron{
@@ -25,31 +24,39 @@ body{
 }
 .four-box1{
     margin-top: 15px;
+    grid-row: 1 / 2;
+    grid-column: 3/4;
 }
 .four-box2{
     margin-top: 15px;
+    grid-row: 1 / 2;
+    grid-column: 4/5;
 }
 .four-box3{
     margin-top: 15px;
+    grid-row: 1 / 2;
+    grid-column: 5/6;
 }
 .four-box4{
     margin-top: 15px;
+    grid-row: 1 / 2;
+    grid-column: 6/7;
 }
 .may{
-    grid-row: 1 / span 2;
+    grid-row: 1 / 3;
     grid-column: 7/9;
 }
 .activity{
-    grid-row: 3 / span 1;
+    grid-row: 3 / 4;
     grid-column: 7/9;
 }
 .sales{
-    grid-row: 2 / span 2;
-    grid-column: 3 / span 4;
+    grid-row: 2 / 4;
+    grid-column: 3 / 7;
 }
 .new{
-    grid-row: 4 / span 2;
-    grid-column: 3 / span 2;
+    grid-row: 4 / 6;
+    grid-column: 3 / 5;
 }
 .top-state{
     grid-row: 4/-1;
@@ -99,6 +106,7 @@ hr {
 /*four box section*/
 .four{
     text-align: center;
+    border-radius: 10px;
 }
 .four:hover{
     background-color: #1976D2;
@@ -144,4 +152,10 @@ hr {
     border-radius: 0px;
 }
 
+
+
+/*online calendar*/
+.tui-view-7 {
+    height: 350px !important;
+}
 

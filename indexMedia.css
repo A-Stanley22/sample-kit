@@ -12,12 +12,15 @@
         height: 300px;
         width: 420px;
     }
+    .tui-view-7 {
+        height: 350px !important;
+    }
 }
 
 
 @media (max-width:950px){
     body{
-        background-color: #56657F;
+        background-color: #2B3648;
     }
     .grid-container{
         display: grid;
@@ -29,22 +32,22 @@
     }
     .aaron{
         grid-row: 1/ 9;
-        grid-column: 1 / span 1;
+        grid-column: 1 / 2;
     }
     .four-box1{
-        grid-row: 1 / span 1;
-        grid-column: 2 / span 1;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
     }
     .four-box2{
-        grid-row: 1 / span 1;
+        grid-row: 1 / 2;
         grid-column: 3/-1;
     }
     .four-box3{
-        grid-row: 2 / span 1;
-        grid-column: 2 / span 1;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
     }
     .four-box4{
-        grid-row: 2 / span 1;
+        grid-row: 2 / 3;
         grid-column: 3/-1;
     }
     .sales{
@@ -84,12 +87,26 @@
     .only-com-four{
         font-size: 11px;
     }
+ 
+    .my-canvas {
+        display: block;
+        height: 457px;
+        width: 573px;
+    }
+
+    /*online calendar*/
+    .cal-con {
+        height: 802px !important;
+    }
+    .tui-view-7 {
+        height: 770px !important;
+    }
 }
 
 
 @media (max-width:770px){
     body{
-        background-color: #56657F;
+        background-color: #2B3648;
     }
     .web-text{
         color: #56657F;
@@ -99,7 +116,7 @@
         display: grid;
         grid-template-rows: 80px 80px 400px 80px 390px 470px 200px;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 6px;
+        grid-gap: 7px;
        /* height: 150vh;*/
        width: 100vw;
     }
@@ -162,13 +179,27 @@
         height: 300px;
         width: 355px;
     }
+
+
+    .cal-con {
+        height: 476px !important;
+    }
+    .tui-view-7 {
+        height: 450px !important;
+    }
 }
 
 @media (max-width:680px){
+    body{
+        background-color: #2B3648;
+    }
     .chart-container{
         position: relative;
         height: 300px;
         width: 350px;
+    }
+    .tui-view-7 {
+        height: 350px !important;
     }
     
 }
@@ -176,7 +207,7 @@
 
 @media (max-width:570px){
     body{
-        background-color: #56657F;
+        background-color: #2B3648;
     }
     .web-text{
         color: #56657F;
@@ -186,7 +217,7 @@
         display: grid;
         grid-template-rows: 80px 80px 240px 80px 260px 250px 200px;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 3px;
+        grid-gap: 5px;
        /* height: 150vh;*/
        width: 100vw;
     }
@@ -254,10 +285,22 @@
     height: 180px;
     width: 225px;
     }  
+    
+
+    /*online calendar*/
+    .cal-con {
+        height: 345px !important;
+    }
+    .tui-view-7 {
+        height: 310px !important;
+    }
 }
 
 
 @media (max-width:325px){
+    body{
+        background-color: #2B3648;
+    }
     .chart-container{
         position: relative;
         height: 180px;
@@ -267,5 +310,11 @@
         position: relative;
         height: 180px;
         width: 190px;
+    }
+
+
+    /*online calendar*/
+    .tui-view-7 {
+        height: 308px !important;
     }
 }

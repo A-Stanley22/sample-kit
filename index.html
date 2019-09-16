@@ -4,29 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script><!--chart.js-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></head>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lato">
     <script src="https://kit.fontawesome.com/5bcb8d08fd.js"></script>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./indexMedia.css">
+
+           <!--online calender script starts here-->
+    <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
+    <!-- If you use the default popups, use this. -->
+    <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css" />
+    <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.css" />
+             <!--online calender script ends here-->
+
+    <style>
+        body {
+          font-family: 'lato', serif;
+        }
+    </style>
+
     <title>css grid</title>
 </head>
 <body class="web-text">
         <div class="grid-container">
             <div class="aaron bg-c gen-pad">
                 <div class="img-div">
-                    <img class="profile-img" src="./images/pic.jpg" alt="">
+                    <img class="profile-img" src="./images/profileImage.jpg" alt="">
                 </div>
-                <div class="aaron-and-font"><h2 class="aaron-items head-txt">Aaron Young</h2><span class="push aaron-and-font-align"><i class="fa fa-check" aria-hidden="true"></i></div>
+                <div class="aaron-and-font">
+                    <h2 class="aaron-items head-txt">Aaron Young</h2>
+                    <span class="push aaron-and-font-align"><i class="fa fa-check" aria-hidden="true"></i></span>
+                </div>
                 <hr>
-                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Dashboard</div>
-                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Messages</div>
-                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>My Task</div>
-                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Clients</div>
+                <div class="aaron-items h-effect">
+                    <span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Dashboard
+                </div>
+                <div class="aaron-items h-effect">
+                    <span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Messages
+                </div>
+                <div class="aaron-items h-effect">
+                    <span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>My Task
+                </div>
+                <div class="aaron-items h-effect">
+                    <span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Clients
+                </div>
                 <hr class="my-hr g">
                 <div class="my-set">Setting</div>
-                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Main Settings</div>
-                <div class="aaron-items h-effect"><span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Integrations</div>
+                <div class="aaron-items h-effect">
+                    <span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Main Settings
+                </div>
+                <div class="aaron-items h-effect">
+                    <span class="a-span"><i class="fa fa-check" aria-hidden="true"></i></span>Integrations
+                </div>
             </div>
             
 
@@ -62,8 +93,8 @@
                 </div>
             </div>
 
-            <div class="may bg-c">
-                <img class="use-as-bg" src="./images/pic.jpg" alt="">
+            <div class="may bg-c tui-full-calendar-layout">
+                <div id="calendar" class="cal-con" style="height: 440px;"></div>
             </div>
 
             <div class="activity bg-c">
@@ -83,7 +114,7 @@
             <div class="new bg-c gen-pad">
                 <h2 class="head-txt">New Clients</h2>
                 <div class="img-div">
-                   <img class="profile-img" src="./images/pic.jpg" alt="">
+                   <img class="profile-img" src="./images/profileImage.jpg" alt="">
                    <div class="two-p">
                         <div>NIcci Troiani</div>
                         <div>Chicago, IL</div>
@@ -94,7 +125,7 @@
                 </div>
 
                 <div class="img-div">
-                   <img class="profile-img" src="./images/pic.jpg" alt="">
+                   <img class="profile-img" src="./images/profileImage.jpg" alt="">
                    <div class="two-p">
                         <div>George Fields</div>
                         <div>New York, NY</div>
@@ -105,7 +136,7 @@
                 </div>
 
                 <div class="img-div">
-                   <img class="profile-img" src="./images/pic.jpg" alt="">
+                   <img class="profile-img" src="./images/profileImage.jpg" alt="">
                    <div class="two-p">
                         <div>Jones Dermot</div>
                         <div>San Francisco, SA</div>
@@ -116,7 +147,7 @@
                 </div>
 
                 <div class="img-div">
-                   <img class="profile-img" src="./images/pic.jpg" alt="">
+                   <img class="profile-img" src="./images/profileImage.jpg" alt="">
                    <div class="two-p">
                         <div>Jane Doe</div>
                         <div>New York, Ny</div>
@@ -134,108 +165,34 @@
 
             
         </div>
-        <script>
 
-var ctx = document.getElementById('myChart3');
-var myChart = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 7, 3],
-            backgroundColor: [
-                'rgba(54, 162, 235, 0.9)',
-                'rgba(54, 162, 235, 0.9)',
-                'rgba(54, 162, 235, 0.9)',
-                'rgba(54, 162, 235, 0.9)',
-                'rgba(54, 162, 235, 0.9)',
-                'rgba(54, 162, 235, 0.9)'
-            ],
-            borderColor: [
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
+           <!--chart.js-->
+        <script src="./index.js"></script>
 
+            <!--jquery-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-new Chart(document.getElementById("line-chart"), {
-  type: 'line',
-  data: {
-    labels: [1,1,1,1,1,1,1,1,1,2],
-    datasets: [{ 
-        data: [86,114,2000,2111,1500,1789,400,221,783,2478],
-        label: "Africa",
-        borderColor: "#3e95cd",
-        fill: false
-      },  
-    ]
-  },
-  options: {
-    maintainAspectRatio: false,
-    title: {
-      display: true,
-      text: 'World population per region (in millions)'
-    }
-  }
-});
+        <!--online calender script-->
+        <script src="https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.js"></script>
+        <script src="https://uicdn.toast.com/tui.dom/v3.0.0/tui-dom.js"></script>
+        <script src="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.min.js"></script>
+        <script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.min.js"></script>
+        <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
 
-
-var ctx = document.getElementById('myChart2');
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-            'rgba(54, 162, 235, 0.9)',
-                'rgba(54, 162, 235, 0.9)',
-                'rgba(54, 162, 235, 0.9)',
-                'rgba(54, 162, 235, 0.9)',
-                'rgba(54, 162, 235, 0.9)',
-                'rgba(54, 162, 235, 0.9)'
-            ],
-            borderColor: [
-            'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        maintainAspectRatio: false,
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-
+         <!--online calendar jquery script-->
+         
+         <script>
+                $('#calendar').tuiCalendar({
+                    defaultView: 'month',
+                    taskView: true,
+                    template: {
+                        monthDayname: function(dayname) {
+                        return '<span class="calendar-week-dayname-name">' + dayname.label + '</span>';
+                        }
+                    }
+                    });
         </script>
+           
+
 </body>
 </html>
